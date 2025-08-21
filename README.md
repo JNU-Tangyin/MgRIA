@@ -1,7 +1,6 @@
 # What to Recommend is When to Recommend: Modeling Multi-Granularity Repurchase Cycles
 
-![](/Users/yin/Library/Application%20Support/marktext/images/2025-08-21-21-50-55-image.png)
-
+![](figures/front.png)
 **Abstract** : State-of-the-art sequential recommenders excel at predicting *what* a user will buy next, yet often fail to predict *when*. This paper argues this is due to a flawed assumption: that repurchase intervals follow a single, simple pattern. We empirically demonstrate that the distribution of repeated-purchase intervals (DRPI) is, in fact, a complex mixture: a dominant power-law trend overlaid with multiple periodic spikes at weekly, monthly, and other granularities. We formalize this as the **Principle of Multi-Granularity Repurchase Cycles**. Ignoring this multi-modal reality introduces systematic timing bias, especially for frequently repurchased items.
 To solve this, we propose MgRIA, a novel recommendation paradigm that explicitly models these cycles. MgRIA uses a multi-granularity timestamp embedding to disentangle coexisting periodicities and a distribution-aware scoring mechanism to predict repurchase likelihood over time. Across three real-world datasets, MgRIA significantly outperforms strong baselines on both standard (Recall/nDCG) and time-aware (Time-MRR) metrics. The model also provides interpretability by revealing the specific repurchase cycles driving its predictions. By operationalizing our discovered principle, MgRIA bridges the gap between predicting *what* and *when*.
 
