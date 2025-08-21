@@ -1,0 +1,106 @@
+%4.4.1Comparative Experiments
+% \subsubsection{Comparative experiments}
+
+%表 4-5 Performance comparison of different methods on next-item prediction 
+
+% \begin{table*}[htbp]
+%     \caption{Comparison of different methods on next-item prediction.}
+%     \footnotesize % 字太大
+%     \begin{center}
+%     \begin{tabular}{c c c c c c}
+%     \hline
+%     \multirow{2}{*}{Baselines} & \multicolumn{3}{c}{ Equity }& \multicolumn{3}{c}{Tafeng }& \multicolumn{3}{c}{Taobao \\
+%      \ &Recall@3&Recall@10&NCDG&Recall@10&Recall@20&NCDG&Recall@20&NCDG \\
+%     \hline
+%     POP                 & 52.70\%     & 83.80\%       & 7.15\%       & 9.27\%      & 9.05\%  \\
+%     S-POP               & 25.26\%     & 25.60\%       & 5.88\%       & 7.44\%      &\textbf{21.31\%}  \\
+%     BPR-MF \cite{rendle2014bayesian}       & 53.01\%     & 85.27\%       & 14.55\%      & 15.70\%     & 16.10\%  \\
+%     Item-KNN \cite{sarwar2001item}         & 47.21\%     & 55.13\%       & 6.02\%       & 7.88\%      & 10.50\%  \\
+%     TIFU-KNN \cite{hu2020modeling}         & 47.09\%     & 65.30\%       & 5.91\%       & 7.92\%      & 9.88\%  \\
+%     STAN  \cite{garg2019sequence}          & 64.26\%     & 87.54\%       & 8.61\%       & 9.96\%      & 12.69\% \\
+%     GRU4Rec  \cite{hidasi2018recurrent}    & 50.50\%     & 80.22\%       & 2.06\%       & 3.60\%      & 13.42\% \\
+%     NARM \cite{li2017neural}               & 67.96\%     & 93.02\%       & 8.85\%       & 10.25\%     & 17.71\%  \\
+%     RepeatNet \cite{ren2019repeatnet}      & 75.01\%     & 92.20\%       & 6.10\%       & 8.54\%      & 11.80\%\\
+%     SR-GNN \cite{wu2019session}            & 59.93\%     & 81.91\%       & 5.22\%       & 7.77\%      & 11.05\% \\
+%     BERT4Rec \cite{sun2019bert4rec}        & 73.79\%     & 93.31\%       & 9.02\%       & 10.34\%     & 14.39\% \\
+%     %%% to show
+%     CORE \cite{hou2022core}                & 82.90\%     & 94.37\%       & 12.13\%       & 13.21\%     & 17.11\% \\
+%     CoHHN \cite{zhang2022price}            & 81.65\%     & 94.20\%       & 10.29\%       & 12.45\%     & 17.52\% \\
+%     RepeatNet-DASP\cite{wang2022generative}   & 82.79\%     & 95.43\%       & 13.62\%       & 13.34\%     & 16.03\% \\
+%     Buy-Cycle \cite{katz2022learning}      & 82.88\%     & 95.66\%       & 13.47\%       & 15.78\%     & 18.74\%\\
+%     \hline
+%     MgRIA(ours)    & \textbf{83.17\%}     & \textbf{95.77\%}       & \textbf{14.97\%}      &\textbf{16.02\%}      & 19.05\% \\
+%     \hline
+%     \end{tabular}
+%     \label{performance_compar}
+%     \end{center}
+% \end{table*}
+
+% \begin{table*}[htbp]
+%     \caption{Comparison of different methods on next-item prediction.}
+%     \footnotesize % 字太大
+%     \begin{center}
+%     \begin{tabular}{c c c c c c}
+%     \hline
+%     \multirow{2}{*}{Baselines} & \multicolumn{2}{c}{ Equity }& \multicolumn{2}{c}{ Tafeng }& Taobao \\
+%      \ &Recall@3&Recall@10&Recall@10&Recall@20&Recall@20 \\
+%     \hline
+%     POP                 & 52.70\%     & 83.80\%       & 7.15\%       & 9.27\%      & 9.05\%  \\
+%     S-POP               & 25.26\%     & 25.60\%       & 5.88\%       & 7.44\%      &\textbf{21.31\%}  \\
+%     BPR-MF \cite{rendle2014bayesian}       & 53.01\%     & 85.27\%       & 14.55\%      & 15.70\%     & 16.10\%  \\
+%     Item-KNN \cite{sarwar2001item}         & 47.21\%     & 55.13\%       & 6.02\%       & 7.88\%      & 10.50\%  \\
+%     TIFU-KNN \cite{hu2020modeling}         & 47.09\%     & 65.30\%       & 5.91\%       & 7.92\%      & 9.88\%  \\
+%     STAN  \cite{garg2019sequence}          & 64.26\%     & 87.54\%       & 8.61\%       & 9.96\%      & 12.69\% \\
+%     GRU4Rec  \cite{hidasi2018recurrent}    & 50.50\%     & 80.22\%       & 2.06\%       & 3.60\%      & 13.42\% \\
+%     NARM \cite{li2017neural}               & 67.96\%     & 93.02\%       & 8.85\%       & 10.25\%     & 17.71\%  \\
+%     RepeatNet \cite{ren2019repeatnet}      & 75.01\%     & 92.20\%       & 6.10\%       & 8.54\%      & 11.80\%\\
+%     SR-GNN \cite{wu2019session}            & 59.93\%     & 81.91\%       & 5.22\%       & 7.77\%      & 11.05\% \\
+%     BERT4Rec \cite{sun2019bert4rec}        & 73.79\%     & 93.31\%       & 9.02\%       & 10.34\%     & 14.39\% \\
+% %%% to further investigate
+%     CORE \cite{hou2022core}                & 82.90\%     & 94.37\%       & 12.13\%       & 13.21\%     & 17.11\% \\
+%     CoHHN \cite{zhang2022price}            & 81.65\%     & 94.20\%       & 10.29\%       & 12.45\%     & 17.52\% \\
+%     RepeatNet-DASP\cite{wang2022generative}& 82.79\%     & 95.43\%       & 13.62\%       & 13.34\%     & 16.03\% \\
+%     Buy-Cycle \cite{katz2022learning}      & 82.88\%     & 95.66\%       & 13.47\%       & 15.78\%     & 18.74\%\\
+% %%% 
+%     \hline
+%     MgRIA(ours)    & \textbf{83.17\%}     & \textbf{95.77\%}       & \textbf{14.97\%}      &\textbf{16.02\%}      & 19.05\% \\
+%     \hline
+%     \end{tabular}
+%     \label{performance_compar}
+%     \end{center}
+% \end{table*}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{multirow}
+\begin{table*}[htbp]
+\caption{Performance on next-item prediction concerning multi-granularity repeat purchase intervals. MgRIA shows impressive performance in various scenarios in terms of \textit{Recall}, \textit{MRR}, and \textit{NDCG} metrics.}
+\centering
+\scalebox{0.7}{
+\begin{tabular}{@{}c|cccc|cccc|ccc@{}}
+\toprule
+\multirow{2}{*}{Baselines} & \multicolumn{4}{c|}{Equity} & \multicolumn{4}{c|}{Tafeng} & \multicolumn{3}{c}{Taobao} 
+\\ \cmidrule(l){2-12} 
+    & Recall@3  & Recall@10  & MRR@10 & NDCG@10 & Recall@10  & Recall@20  & MRR@20 & NDCG@20 & Recall@20  & MRR@20 & NDCG@20 
+\\ \midrule
+POP        & 52.70\%   & 83.80\%  & 60.60\% & 74.82\%   & 7.15\%  & 9.27\%  & 8.84\%  & 8.50\% & 9.05\%  & 6.71\%  & 6.88\% \\ 
+S-POP      & 25.26\% & 25.60\% & 17.65\% & 26.84\%  & 5.88\%  & 7.44\%  & 7.52\% & 7.42\%  & \textbf{21.31\%} & 16.00\% & 18.18\% \\ 
+BPR-MF \cite{rendle2014bayesian}   & 53.01\% & 85.27\% & 49.91\% & 80.12\%  & 14.55\% & 15.70\% & 12.32\% & 15.21\%  & 16.10\% & 14.50\% & 16.61\%  \\ 
+Item-KNN \cite{sarwar2001item} & 47.21\% & 55.13\% & 33.01\% & 51.15\%  & 6.02\%  & 7.88\%  & 5.55\% & 6.16\%  & 10.50\% & 14.13\% & 18.74\%  \\ 
+TIFU-KNN \cite{hu2020modeling} & 47.09\% & 65.30\% & 35.26\% & 65.52\%  & 5.91\%  & 7.92\%  & 5.59\% & 8.01\%  & 9.88\%  & 9.13\% & 10.34\%  \\ 
+STAN \cite{garg2019sequence}   & 64.26\% & 87.54\% & 44.61\% & 87.72\%  & 8.61\%  & 9.96\%  & 8.11\% & 10.02\%  & 12.69\% & 12.16\% & 14.27\%  \\ 
+GRU4Rec \cite{hidasi2018recurrent}  & 50.50\% & 80.22\% & 40.16\% & 79.20\%  & 2.06\%  & 3.60\%  & 2.21\% & 3.37\%  & 13.42\% & 11.26\% & 13.16\%  \\ 
+NARM \cite{li2017neural} & 67.96\% & 93.02\% & 66.82\% & 92.62\%  & 8.85\%  & 10.25\% & 7.82\% & 9.89\%  & 17.71\% & 11.17\% & 17.62\%  \\ 
+RepeatNet \cite{ren2019repeatnet} & 75.01\% & 92.20\% & 67.17\% & 90.61\%  & 6.10\%  & 8.54\%  & 6.13\% & 8.36\%  & 11.80\% & 9.81\% & 11.91\%  \\ 
+SR-GNN \cite{wu2019session} & 59.93\% & 81.91\% & 55.62\% & 82.03\%  & 5.22\%  & 7.77\%  & 6.17\% & 7.78\%  & 11.05\% & 7.17\%  & 10.88\% \\ 
+BERT4Rec \cite{sun2019bert4rec} & 73.79\% & 93.31\% & 61.37\% & 91.20\%  & 9.02\%  & 10.34\% & 8.71\% & 10.10\%  & 14.39\% & 12.94\% & 14.16\%  \\ 
+CORE \cite{hou2022core} & 82.90\% & 94.37\% & 73.26\% & 92.61\%  & 12.13\% & 13.21\% & 12.21\% & 13.16\%  & 17.11\% & 14.62\% & 17.42\%  \\ 
+CoHHN \cite{zhang2022price} & 81.65\% & 94.20\% & 70.37\% & 94.33\%  & 10.29\% & 12.45\% & 11.37\% & 13.11\%  & 17.52\% & 10.10\% & 16.71\%  \\ 
+RepeatNet-DASP \cite{wang2022generative} & 82.79\% & 95.43\% & 78.23\% & 95.12\%  & 13.62\% & 13.34\% & 12.63\% & 13.62\%  & 16.03\% & \textbf{15.83\%} & 16.16\%  \\ 
+Ride Buy-Cycle \cite{katz2022learning} & 82.88\% & 95.66\% & 80.62\% & \textbf{96.16\%}  & 13.47\% & 15.78\% & 12.52\% & \textbf{16.82\%}  & 17.74\% & 15.13\% & 18.71\%  \\ \midrule
+MgRIA(ours) & \textbf{83.17\%} & \textbf{95.77\%} & \textbf{81.76\%} & 95.03\%   & \textbf{14.97\%} & \textbf{16.02\%} & \textbf{13.36\%} & 16.66\%  & 19.05\% & 15.36\% & \textbf{18.88\%}  \\ 
+\bottomrule
+\end{tabular}
+}
+\end{table*}

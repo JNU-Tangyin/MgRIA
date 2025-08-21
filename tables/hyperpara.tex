@@ -1,0 +1,25 @@
+
+\begin{table}[htbp]
+    \label{hyperparameters}
+    \caption{The hyperparameters. In the table, m stands for month, w for week, and d for day.}
+    \footnotesize
+    \centering
+    \begin{tabular}{c c c c}
+    \hline
+    hyperparameters & Equity & Tafeng & Taobao \\
+    \hline
+    batch\_size        & 128           & 256             & 512              \\
+    max\_len           & 11            & 40              & 19               \\
+    stamp\_type        & m+d     & m+w+d  & m+w+d   \\
+    learning\_rate     & 0.002         & 0.002           & 0.002            \\
+    seed               & 2000-2300     & 2000-2300       & 2000-2300        \\
+    dropout\_rate      & 0.1           & 0.1             & 0.1              \\
+    model\_dim         & 35            & 35              & 50               \\
+    head\_num          & 5             & 5               & 5                \\
+    mask\_num          & 1             & 20              & 3                \\
+    Power\_num         & 2             & 1               & 1                \\
+    Gauss\_num         & 4             & 6               & 3                \\
+    \hline
+    \end{tabular}
+    \label{hyperpara}
+\end{table}

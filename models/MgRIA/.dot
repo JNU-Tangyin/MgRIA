@@ -1,0 +1,187 @@
+digraph G {
+concentrate=true;
+splines="ortho";
+rankdir="LR";
+subgraph legend{
+    rank = min;
+    label = "legend";
+    Legend [shape=none, margin=0, label = <
+        <table cellspacing="0" cellpadding="0" border="1"><tr><td>Code2flow Legend</td></tr><tr><td>
+        <table cellspacing="0">
+        <tr><td>Regular function</td><td width="50px" bgcolor='#cccccc'></td></tr>
+        <tr><td>Trunk function (nothing calls this)</td><td bgcolor='#966F33'></td></tr>
+        <tr><td>Leaf function (this calls nothing else)</td><td bgcolor='#6db33f'></td></tr>
+        <tr><td>Function call</td><td><font color='black'>&#8594;</font></td></tr>
+        </table></td></tr></table>
+        >];
+}node_1e036343 [label="0: (global)()" name="MgRIA_single_file::(global)" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_045b1a30 [label="490: __init__()" name="MgRIA_single_file::BertRepeatModel.__init__" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_1a18849f [label="511: forward()" name="MgRIA_single_file::BertRepeatModel.forward" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_0c20a1d2 [label="529: gelu()" name="MgRIA_single_file::BertRepeatModel.gelu" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_8a068551 [label="205: __init__()" name="MgRIA_single_file::Block.__init__" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_2f13eeed [label="24: __init__()" name="MgRIA_single_file::Embeddings.__init__" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_6d62d3f5 [label="426: __init__()" name="MgRIA_single_file::Explore_decoder_add.__init__" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_6c0d987b [label="439: forward()" name="MgRIA_single_file::Explore_decoder_add.forward" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_2602d8a7 [label="759: Get_user_gp()" name="MgRIA_single_file::Get_user_gp" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_60f8f1fa [label="540: __init__()" name="MgRIA_single_file::ItemData.__init__" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_b018605f [label="681: computeRePos()" name="MgRIA_single_file::ItemData.computeRePos" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_a05e3e9f [label="667: computegap()" name="MgRIA_single_file::ItemData.computegap" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_0d4b027e [label="730: convert_tokens_to_ids()" name="MgRIA_single_file::ItemData.convert_tokens_to_ids" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_9b74e590 [label="712: get_random_word()" name="MgRIA_single_file::ItemData.get_random_word" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_81af6dc0 [label="606: prepare()" name="MgRIA_single_file::ItemData.prepare" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_fb0a9193 [label="723: str2idx()" name="MgRIA_single_file::ItemData.str2idx" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_59b365a7 [label="126: __init__()" name="MgRIA_single_file::LayerNorm.__init__" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_0f9db7a6 [label="141: __init__()" name="MgRIA_single_file::MultiHeadedSelfAttention.__init__" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_536a8fc7 [label="151: forward()" name="MgRIA_single_file::MultiHeadedSelfAttention.forward" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_dd840fdd [label="192: __init__()" name="MgRIA_single_file::PositionWiseFeedForward.__init__" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_8005879d [label="197: forward()" name="MgRIA_single_file::PositionWiseFeedForward.forward" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_7ea377a1 [label="243: __init__()" name="MgRIA_single_file::REmotion_add.__init__" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_4235ecfd [label="392: Distri()" name="MgRIA_single_file::Repeat_decoder_add.Distri" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_e8847e9b [label="301: __init__()" name="MgRIA_single_file::Repeat_decoder_add.__init__" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_8ef8bf31 [label="334: forward()" name="MgRIA_single_file::Repeat_decoder_add.forward" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_d90db7d4 [label="71: __init__()" name="MgRIA_single_file::TemporalEmbedding.__init__" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_c73d7050 [label="787: Test_user_gp()" name="MgRIA_single_file::Test_user_gp" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_85d3743f [label="224: __init__()" name="MgRIA_single_file::Transformer.__init__" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_6a81ca42 [label="284: build_map()" name="MgRIA_single_file::build_map" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_063e5f75 [label="746: convert_unique_idx()" name="MgRIA_single_file::convert_unique_idx" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_421d6288 [label="119: gelu()" name="MgRIA_single_file::gelu" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_1b4e7b77 [label="812: get_loss()" name="MgRIA_single_file::get_loss" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_1b7817a9 [label="113: merge_last()" name="MgRIA_single_file::merge_last" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_6278bcad [label="105: split_last()" name="MgRIA_single_file::split_last" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_060dcb1f [label="924: test()" name="MgRIA_single_file::test" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_d3c4f8d5 [label="829: train()" name="MgRIA_single_file::train" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_1e036343 -> node_2602d8a7 [color="#009E73" penwidth="2"];
+node_1e036343 -> node_c73d7050 [color="#009E73" penwidth="2"];
+node_1e036343 -> node_c73d7050 [color="#009E73" penwidth="2"];
+node_1e036343 -> node_d3c4f8d5 [color="#009E73" penwidth="2"];
+node_045b1a30 -> node_6d62d3f5 [color="#000000" penwidth="2"];
+node_045b1a30 -> node_59b365a7 [color="#000000" penwidth="2"];
+node_045b1a30 -> node_7ea377a1 [color="#000000" penwidth="2"];
+node_045b1a30 -> node_e8847e9b [color="#000000" penwidth="2"];
+node_045b1a30 -> node_85d3743f [color="#000000" penwidth="2"];
+node_1a18849f -> node_0c20a1d2 [color="#CC79A7" penwidth="2"];
+node_8a068551 -> node_59b365a7 [color="#E69F00" penwidth="2"];
+node_8a068551 -> node_59b365a7 [color="#E69F00" penwidth="2"];
+node_8a068551 -> node_0f9db7a6 [color="#E69F00" penwidth="2"];
+node_8a068551 -> node_dd840fdd [color="#E69F00" penwidth="2"];
+node_2f13eeed -> node_59b365a7 [color="#0072B2" penwidth="2"];
+node_2f13eeed -> node_d90db7d4 [color="#0072B2" penwidth="2"];
+node_6c0d987b -> node_6a81ca42 [color="#009E73" penwidth="2"];
+node_2602d8a7 -> node_063e5f75 [color="#CC79A7" penwidth="2"];
+node_60f8f1fa -> node_81af6dc0 [color="#56B4E9" penwidth="2"];
+node_60f8f1fa -> node_fb0a9193 [color="#56B4E9" penwidth="2"];
+node_81af6dc0 -> node_b018605f [color="#000000" penwidth="2"];
+node_81af6dc0 -> node_a05e3e9f [color="#000000" penwidth="2"];
+node_81af6dc0 -> node_0d4b027e [color="#000000" penwidth="2"];
+node_81af6dc0 -> node_0d4b027e [color="#000000" penwidth="2"];
+node_81af6dc0 -> node_9b74e590 [color="#000000" penwidth="2"];
+node_536a8fc7 -> node_1b7817a9 [color="#CC79A7" penwidth="2"];
+node_536a8fc7 -> node_6278bcad [color="#CC79A7" penwidth="2"];
+node_536a8fc7 -> node_6278bcad [color="#CC79A7" penwidth="2"];
+node_8005879d -> node_421d6288 [color="#0072B2" penwidth="2"];
+node_8ef8bf31 -> node_4235ecfd [color="#E69F00" penwidth="2"];
+node_8ef8bf31 -> node_4235ecfd [color="#E69F00" penwidth="2"];
+node_8ef8bf31 -> node_4235ecfd [color="#E69F00" penwidth="2"];
+node_8ef8bf31 -> node_6a81ca42 [color="#E69F00" penwidth="2"];
+node_8ef8bf31 -> node_6a81ca42 [color="#E69F00" penwidth="2"];
+node_c73d7050 -> node_063e5f75 [color="#000000" penwidth="2"];
+node_85d3743f -> node_8a068551 [color="#CC79A7" penwidth="2"];
+node_85d3743f -> node_2f13eeed [color="#CC79A7" penwidth="2"];
+node_d3c4f8d5 -> node_045b1a30 [color="#0072B2" penwidth="2"];
+node_d3c4f8d5 -> node_60f8f1fa [color="#0072B2" penwidth="2"];
+node_d3c4f8d5 -> node_60f8f1fa [color="#0072B2" penwidth="2"];
+node_d3c4f8d5 -> node_1b4e7b77 [color="#0072B2" penwidth="2"];
+node_d3c4f8d5 -> node_060dcb1f [color="#0072B2" penwidth="2"];
+node_d3c4f8d5 -> node_060dcb1f [color="#0072B2" penwidth="2"];
+subgraph cluster_6f7f9dba {
+    node_6278bcad node_1b7817a9 node_421d6288 node_6a81ca42 node_063e5f75 node_2602d8a7 node_c73d7050 node_1b4e7b77 node_d3c4f8d5 node_060dcb1f node_1e036343;
+    label="File: MgRIA_single_file";
+    name="MgRIA_single_file";
+    style="filled";
+    graph[style=dotted];
+    subgraph cluster_96d7251d {
+        node_2f13eeed;
+        label="Class: Embeddings";
+        name="Embeddings";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_cbcbba19 {
+        node_d90db7d4;
+        label="Class: TemporalEmbedding";
+        name="TemporalEmbedding";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_9be553e2 {
+        node_59b365a7;
+        label="Class: LayerNorm";
+        name="LayerNorm";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_4ab61521 {
+        node_0f9db7a6 node_536a8fc7;
+        label="Class: MultiHeadedSelfAttention";
+        name="MultiHeadedSelfAttention";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_473538be {
+        node_dd840fdd node_8005879d;
+        label="Class: PositionWiseFeedForward";
+        name="PositionWiseFeedForward";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_0bbd34ec {
+        node_8a068551;
+        label="Class: Block";
+        name="Block";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_916a87f3 {
+        node_85d3743f;
+        label="Class: Transformer";
+        name="Transformer";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_9860dc08 {
+        node_7ea377a1;
+        label="Class: REmotion_add";
+        name="REmotion_add";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_6797a682 {
+        node_e8847e9b node_8ef8bf31 node_4235ecfd;
+        label="Class: Repeat_decoder_add";
+        name="Repeat_decoder_add";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_5e287d62 {
+        node_6d62d3f5 node_6c0d987b;
+        label="Class: Explore_decoder_add";
+        name="Explore_decoder_add";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_981d3a12 {
+        node_045b1a30 node_1a18849f node_0c20a1d2;
+        label="Class: BertRepeatModel";
+        name="BertRepeatModel";
+        style="filled";
+        graph[style=dotted];
+    };
+    subgraph cluster_6b6cea27 {
+        node_60f8f1fa node_81af6dc0 node_a05e3e9f node_b018605f node_9b74e590 node_fb0a9193 node_0d4b027e;
+        label="Class: ItemData";
+        name="ItemData";
+        style="filled";
+        graph[style=dotted];
+    };
+};
+}

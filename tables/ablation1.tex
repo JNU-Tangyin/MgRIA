@@ -1,0 +1,22 @@
+\begin{table*}[htbp]
+    \caption{Ablation I: Experiments on intervals and repeat types.}
+    \centering
+    \scalebox{0.9}{
+    \begin{tabular}{lcccc}
+    \hline
+    model&Recall@3&Recall@10&MRR@10&NDCG@10 \\
+    \hline
+    BERT                                               & 73.79\%  &74.62\%&63.31\%&74.25\%  \\
+    BERT + timestamp                                   & 82.13\%  &85.62\%&69.48\%&85.37\%  \\
+    BERT + timestamp + Dis                             & 82.00\%  &85.67\%&70.32\%&86.19\%  \\
+    BERT + timestamp + time interval                   & 82.31\%  &86.29\%&77.27\%&85.34\%  \\
+    BERT + timestamp + time interval + Repeat(proj)    & 82.44\%  &86.32\%&79.10\%&84.12\%  \\
+    BERT + timestamp + time interval + Repeat(res)     & 82.97\%  &87.62\%&79.11\%&88.28\%  \\
+    BERT + timestamp + time interval + Repeat + Dis(res) & \textbf{83.17\%} &\textbf{95.77\%}& \textbf{81.76\%} & \textbf{95.03\%}  \\
+    BERT + timestamp + Repeat(res)                    & 82.79\%  &84.73\%&77.33\%&86.62\%   \\
+    BERT + timestamp + Repeat + Dis(res)               & 82.94\%  &83.62\%&81.65\%&81.47\%   \\
+    \hline
+    \end{tabular}
+    }
+    \label{Ablation_exper}
+\end{table*}

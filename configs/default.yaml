@@ -1,0 +1,68 @@
+# Default configuration for MgRIA project
+
+# Base configuration
+project_root: "."
+datasets_dir: "datasets"
+results_dir: "results"
+figures_dir: "figures"
+tables_dir: "tables"
+models_dir: "models"
+seed: 2300
+device: "auto"
+
+# Dataset configuration
+dataset:
+  dataset_type: "tafeng"
+  max_len: 50
+  mask_prob: 0.15
+  train_ratio: 0.8
+  valid_ratio: 0.1
+  test_ratio: 0.1
+  batch_size: 256
+  num_workers: 4
+
+# Model configuration
+model:
+  model_type: "MgRIA"
+  vocab_size: 15789
+  dim: 64
+  n_layers: 2
+  n_heads: 2
+  max_len: 50
+  dropout_prob: 0.1
+  attention_dropout_prob: 0.1
+  hidden_dropout_prob: 0.1
+  weekday_size: 8
+  day_size: 32
+  month_size: 13
+  hidden_act: "gelu"
+  layer_norm_eps: 1e-12
+  initializer_range: 0.02
+
+# Training configuration
+training:
+  learning_rate: 1e-4
+  weight_decay: 0.01
+  warmup_steps: 10000
+  max_epochs: 200
+  patience: 10
+  batch_size: 256
+  gradient_accumulation_steps: 1
+  max_grad_norm: 1.0
+  optimizer: "adam"
+  adam_epsilon: 1e-8
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  lr_scheduler: "linear"
+  eval_steps: 1000
+  save_steps: 1000
+  logging_steps: 100
+  eval_metrics: ["recall@10", "mrr@10", "ndcg@10"]
+  save_total_limit: 3
+  save_best_model: true
+  metric_for_best_model: "ndcg@10"
+  greater_is_better: true
+  dataloader_num_workers: 4
+  dataloader_pin_memory: true
+  fp16: false
+  gradient_checkpointing: false

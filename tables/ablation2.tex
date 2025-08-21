@@ -1,0 +1,21 @@
+\begin{table*}[htbp]
+    \caption{Ablation II: Variations of BERT module on multi or single masks.}
+    \footnotesize
+    \centering
+    \begin{tabular}{lccccc}
+    \hline
+    Model&mask&Recall@3&Recall@10&MRR@10&NDCG@10 \\
+    \hline
+    BERT + timestamp + time interval + Repeat (res)&\multirow{3}*{multi}& 82.97\%  &87.62\%&79.11\%&88.28\%  \\
+    BERT + timestamp + time interval + Repeat + Dis (res)   && \textbf{83.17\%} &\textbf{95.77\%}& \textbf{81.76\%} & \textbf{95.03\%}   \\
+    BERT + timestamp + Repeat (res)                         && 82.79\%  &84.73\%&77.33\%&86.62\%   \\
+    BERT + timestamp + Repeat + Dis (res)                   && 82.94\%  &83.62\%&81.65\%&81.47\%   \\
+    \hline
+    BERT + timestamp + time interval + Repeat (res)& \multirow{3}*{single}& 82.83\%  &83.52\%&78.80\%&88.00\%  \\
+    BERT + timestamp + time interval + Repeat + Dis(res)    && 83.11\% &88.53\%&82.36\%&89.73\%  \\
+    BERT + timestamp + Repeat (res)                         && 82.75\% &85.35\%&80.21\%&86.43\%   \\
+    BERT + timestamp + Repeat + Dis(res)                    && 82.94\% &83.48\%&81.71\%&81.39\%   \\
+    \hline
+    \end{tabular}
+    \label{BERT_variation}
+\end{table*}
